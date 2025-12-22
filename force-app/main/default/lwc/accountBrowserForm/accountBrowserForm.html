@@ -1,0 +1,20 @@
+<!--
+ * @description       : 
+ * @author            : batuayyildiz
+ * @group             : 
+ * @last modified on  : 22.12.2025
+ * @last modified by  : batuayyildiz
+ -->
+
+<!-- Account Browser Form -->
+<template>
+    <div class="slds-var-m-bottom_small">
+        <lightning-card title="Filter Accounts" icon-name="utility:search">
+            <lightning-combobox  name="account" label="Select account" variant="label-hidden"
+                                placeholder="Select an account"
+                                options={accounts} value={selectedAccountId}
+                                onchange={selectAccountChange}>
+            </lightning-combobox>
+        </lightning-card>
+    </div>
+</template>
