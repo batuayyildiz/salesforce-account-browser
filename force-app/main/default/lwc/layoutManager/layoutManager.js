@@ -9,4 +9,14 @@ import { LightningElement } from 'lwc';
 
 export default class LayoutManager extends LightningElement {
 
+    loading = false;
+
+    handleLoading(event){
+        this.loading = true;
+    }
+
+    handleDoneLoading(event){
+        this.loading = false;
+    }
+
 }

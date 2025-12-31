@@ -15,7 +15,7 @@ public with sharing class AccountBrowser {
 
     @AuraEnabled(Cacheable=true)
     public static List<Contact> getRelatedContacts(String accountId){
-        return [SELECT Id, FirstName, LastName
+        return [SELECT Id, Name, Photo_URL__c
                 FROM Contact
                 WHERE AccountId = :accountId];
     }

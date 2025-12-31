@@ -12,7 +12,7 @@
     <lightning-tabset variant="scoped">
         <lightning-tab label="Gallery">
             <div class="slds-scrollable">
-                <p>Contact gallery will be here!</p>
+                <c-contact-tiles contact-list={contacts} selected-contact-id={selectedContactId} oncontactselected={handleContactSelected}></c-contact-tiles>
             </div>
         </lightning-tab>
         <lightning-tab label="Grid">

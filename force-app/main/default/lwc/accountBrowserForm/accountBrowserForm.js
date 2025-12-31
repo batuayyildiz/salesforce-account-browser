@@ -6,7 +6,7 @@
  * @last modified by  : batuayyildiz
 **/
 import { LightningElement, wire } from 'lwc';
-import getContacts from '@salesforce/apex/AccountBrowser.getAccounts';
+import getAccounts from '@salesforce/apex/AccountBrowser.getAccounts';
 
 export default class AccountBrowserForm extends LightningElement {
 
@@ -14,8 +14,8 @@ export default class AccountBrowserForm extends LightningElement {
     error;
     selectedAccountId;
 
-    @wire(getContacts)
-    wired_getContacts({ data, error }){
+    @wire(getAccounts)
+    wired_getAccounts({ data, error }){
         this.accounts = [];
         if(data){
             console.log('Accounts data from Apex ::: ' + data);

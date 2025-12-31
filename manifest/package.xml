@@ -4,11 +4,19 @@
         <members>layoutManager</members>
         <members>accountBrowserForm</members>
         <members>accountBrowser</members>
+        <members>contactTiles</members>
+        <members>contactTile</members>
+        <members>contactDetail</members>
+        <members>utils</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>AccountBrowser</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>SelectedContactChannel</members>
+        <name>LightningMessageChannel</name>
     </types>
     <version>65.0</version>
 </Package>

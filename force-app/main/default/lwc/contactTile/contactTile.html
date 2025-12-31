@@ -1,0 +1,19 @@
+<!--
+ * @description       : 
+ * @author            : batuayyildiz
+ * @group             : 
+ * @last modified on  : 31.12.2025
+ * @last modified by  : batuayyildiz
+ -->
+
+<!-- Contact Tile -->
+<template>
+    <div class={tileSelected} onclick={handleContactSelect}>
+        <div class="innertile">
+            <img src={contact.Photo_URL__c} class="innertile">
+            <div class="lower-third">
+                <h1>{contact.Name}</h1>
+            </div>
+        </div>
+    </div>
+</template>
